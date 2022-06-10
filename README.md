@@ -1,5 +1,6 @@
 # SpaceXCoinshares
 
+Save your favorite rockets and go TO THE MOOOOON
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.17.
 
 ## Development server
@@ -14,14 +15,19 @@ Run `ng generate component component-name` to generate a new component. You can 
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+## Dev
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Project done with :
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Angular CLI version 12.2.17
+- @angular-devkit/architect 0.1202.17
+- @angular-devkit/build-angular 12.2.17
+- @angular-devkit/core 12.2.17
+- @angular-devkit/schematics 12.2.17
+- @angular/cli 12.2.17
+- @schematics/angular 12.2.17
+- rxjs 6.6.7
+- typescript 4.3.5
+- Node 12.20.2
+- Package Manager: npm 6.14.11
+- OS win32 x64
