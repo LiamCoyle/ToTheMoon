@@ -1,0 +1,72 @@
+<div class="table-container d-flex flex-column p-3 pb-5">
+  <div class="d-flex flex-row justify-content-between">
+    <div class="col">
+      <div class="dropdown float-right">
+        <button
+          class="btn btn-secondary dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton1"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+        >
+          Order By
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li>
+            <span (click)="orderByIdDesc()" class="dropdown-item pointer"
+              >Id Desc</span
+            >
+          </li>
+          <li>
+            <span (click)="orderByIdAsc()" class="dropdown-item pointer"
+              >Id Asc</span
+            >
+          </li>
+          <li>
+            <span (click)="orderByNameDesc()" class="dropdown-item pointer"
+              >Name</span
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="table-responsive">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col"><i class="fa-regular fa-star"></i></th>
+          <th scope="col">Id</th>
+          <th scope="col">Name</th>
+          <th scope="col">Type</th>
+          <th scope="col">First Flight</th>
+          <th scope="col">Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let rocket of rockets; index as i">
+          <th scope="row">
+            <i
+              (click)="toggleFavorite(rocket)"
+              [ngClass]="{
+                'fa-regular': !isFavorite(rocket),
+                'fa-solid': isFavorite(rocket)
+              }"
+              class="fa-star pointer"
+            ></i>
+          </th>
+          <th>
+            <a [routerLink]="['/rockets/detail', rocket.rocket_id]">{{
+              rocket.id
+            }}</a>
+          </th>
+          <td>{{ rocket.rocket_name }}</td>
+          <td>{{ rocket.rocket_type }}</td>
+          <td>{{ rocket.first_flight }}</td>
+          <td>{{ rocket.description }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

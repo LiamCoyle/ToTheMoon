@@ -1,0 +1,24 @@
+.btn-primary {
+  color: white;
+  background-color: orange;
+  border-color: orange;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  color: white;
+  background-color: orange;
+  border-color: orange;
+}
+
+.btn-outline-success {
+  color: white;
+  border-color: orange;
+}
+
+.btn:focus {
+  color: white;
+  border-color: orange;
+}

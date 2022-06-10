@@ -1,0 +1,30 @@
+<div *ngIf="rocket" class="card">
+  <div class="card-header">
+    <h3 class="card-title">{{ rocket.rocket_name }}</h3>
+  </div>
+  <div class="card-body">
+    <ul class="list-unstyled">
+      <li class="list-item">
+        Cost per launch : {{ rocket.cost_per_launch }} $
+      </li>
+      <li class="list-item">
+        Success rate percent : {{ rocket.success_rate_pct }}%
+      </li>
+      <li class="list-item">First Flight : {{ rocket.first_flight }}</li>
+      <li class="list-item">Diameter : {{ rocket.diameter.meters }}m</li>
+      <li class="list-item">Mass : {{ rocket.mass.kg }}kg</li>
+      <li class="list-item">Engine number: {{ rocket.engines.number }}</li>
+      <li class="list-item">Engine type: {{ rocket.engines.type }}</li>
+      <li class="list-item"><a href="{{ rocket.wikipedia }}">Wikipédia</a></li>
+    </ul>
+    <p class="card-text">{{ rocket.description }}</p>
+    <div class="d-flex flex-row">
+      <div *ngFor="let image of rocket.flickr_images; index as i" class="col">
+        <img
+          src="{{ image }}"
+          style="height: 100%; width: 100%; object-fit: contain"
+        />
+      </div>
+    </div>
+  </div>
+</div>

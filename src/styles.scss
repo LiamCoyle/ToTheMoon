@@ -1,1 +1,31 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./scss/utility.scss";
+@import "./scss/form.scss";
+@import "./scss/button.scss";
+
+.logo {
+  height: 75px;
+  width: 75px;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  font-weight: 400;
+  font-family: "Montserrat" !important;
+  background: url(./assets/img/spacex-prevoit-lancer-satellite-finance-dogecoin-autour-lune-couv.jpeg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+  min-height: 100vh;
+}
+
+.table-container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+}

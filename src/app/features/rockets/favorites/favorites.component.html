@@ -1,0 +1,4 @@
+<app-table
+  [rockets]="(favoritesFromService$ | async) || []"
+  [favorites]="(favoritesFromService$ | async) || []"
+></app-table>
