@@ -1,8 +1,7 @@
-# SpaceXCoinshares
+# SpaceX
 
 Save your favorite rockets and go TO THE MOOOOON
 
-Deployed on Heroku : https://napoleon-to-the-moon.herokuapp.com
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.17.
 
